@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Estilos de la barra lateral */
+.sidebar {
+    width: 25%;
+    background-color: #ffd700;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: flex-start; /* Alinea los elementos al inicio (arriba) */
+    position: relative; /* Asegura que los elementos dentro puedan ser posicionados */
+}
+
+.profile-section {
+    text-align: 0;
+    
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.search-bar input {
+    width:330px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 250px;
+}
+
+
+.menu-item {
+    display: flex;
+    width: 300%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.menu-item:hover{
+    background-color: #938f8f;
+}
+
+.logout-btn {
+    width: 300px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background-color: #686858;
+}
+
+/* Estilos del contenido principal */
+.main-content {
+    
+    width: 75%;
+    padding: 40px;
+    background-color: rgb(2, 2, 2);
+    color: white;
+}
+
+.sidebar h2 {
+    position: absolute; /* Hacemos que el h2 se posicione de forma absoluta */
+    top: 50px; /* Lo llevamos al tope superior */
+    right: 0; /* Y lo alineamos a la derecha */
+    right: 50px;
+    font-size: 26px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-align:right; /* Alinea el texto a la derecha */
+}
+
+h2:hover {
+    text-decoration: underline; /* Subraya el texto cuando se pasa el puntero */
+}
+
+.profile-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+
+}
+
+.avatar {
+    width: 200px;
+    height: 180px;
+    border-radius: 200%;
+    margin-bottom: 20px;
+    margin-right: 180px;
+    
+}
+
+form input {
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: black;
+}
+
+/* Para pantallas medianas (tablets) */
+@media (min-width: 480px) and (max-width: 1024px) {
+
+    .menu-item{
+        width: 70px;
+    }
+    .search-bar input{
+        width: 70px;
+    }
+    .logout-btn{
+        width: 70px;
+    }
+    .profile-section h2{
+        font-size: 0px;
+    }
+
+}
+

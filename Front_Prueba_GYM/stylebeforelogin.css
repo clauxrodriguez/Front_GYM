@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general para el cuerpo */
+body {
+    font-family: Arial, sans-serif; /* Fuente general */
+    margin: 0;
+    padding: 0; /*relleno*/
+    background-color: black; /* collor de Fondo negro */
+    display: flex; /* Flexbox para diseño de lado a lado */
+    height: 100vh; /* Altura completa de la ventana */
+}
+
+/* Barra lateral */
+.sidebar {
+    background-color: #ffd700; /*color de fondo*/
+    width: 20%;  /*ancho*/
+    display: flex;
+    align-items: center;  /*alineacion de elementos*/
+    justify-content: center; /*justificar el contenido*/
+}
+
+.sidebar h1 {
+    font-size: 70px; /* Tamaño de fuente grande para el logo */
+    font-weight: bold; /* Negrita */
+    color: black; /* Color del texto */
+    margin: 0; /* Sin márgenes */
+    text-align: center;
+}
+
+/* Contenedor principal */
+.container {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 20px;
+    flex-wrap: wrap; /* Para que las tarjetas se ajusten en pantallas pequeñas */
+}
+
+/* Tarjetas de los roles */
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 200px; /* Ajusta el ancho de la tarjeta */
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 4px 8px rgba(2, 2, 2, 0.1); /* Sombra para la tarjeta */
+    transition: transform 0.32s, box-shadow 0.2s; /* Animación suave */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+}
+
+
+.card img {
+    width: 100px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 16px;
+    color: black;
+    margin: 0;
+}
+
+.card:hover {
+    transform: translateY(-50px); /* Efecto de elevación al pasar el mouse */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #ffd700;
+}
+
+.card:active {
+    transform: scale(0.98); /* Reduce ligeramente el tamaño al hacer clic */
+}
+
+
+/* Media Queries para hacer el diseño responsivo */
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Poner tarjetas en columna en lugar de fila */
+        align-items: center; /* Centrar las tarjetas en la columna */
+    }
+
+    .card {
+        width: 45%; /* Hacer que las tarjetas ocupen más espacio en pantallas pequeñas */
+    }
+
+    .sidebar {
+        display: flex; /* Ocultar la barra lateral en móviles */
+    }
+
+    .card h2 {
+        
+        font-size: 0.8em;
+    }
+}
+
+/* Para pantallas medianas (tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 80%; /* Ajustar el ancho de las tarjetas en pantallas medianas */
+    }
+
+    .sidebar h1 {
+        font-size: 2.5em; /* Reducir el tamaño del texto en la barra lateral */
+    }
+}
+
+/* Para pantallas grandes (escritorio) 
+@media (min-width: 1025px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .card {
+        width: 200px; /* Mantener el tamaño de las tarjetas como antes 
+    }
+
+    .sidebar {
+        width: 20%;
+    }
+}*/

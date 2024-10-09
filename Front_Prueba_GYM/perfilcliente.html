@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Usuario</title>
+    <link rel="stylesheet" href="styleperfilcliente.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Barra Lateral -->
+        <div class="sidebar">
+            <div class="profile-section">
+                <img src="profile.png" alt="Foto de perfil" class="profile-pic">
+                <h2>Nombre_usuario</h2>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+            </div>
+            <nav class="menu">
+                <a href="#" class="menu-item"><img src="datos.png" alt=""> Mis datos</a>
+                <a href="#" class="menu-item"><img src="pagos.png" alt=""> Mis pagos</a>
+                <a href="#" class="menu-item"><img src="informes.png" alt=""> Mis informes</a>
+            </nav>
+
+            <button class="logout-btn" onclick="window.location.href='logout.html'">Cerrar sesión</button>
+        </div>
+
+
+        <!-- Contenido principal -->
+        <div class="main-content">
+            <h2>Editar Perfil</h2>
+            <div class="profile-form">
+                <img src="avatar.png" alt="Avatar" class="avatar">
+                <form>
+                    <input type="text" value="Nombre_usuario" placeholder="Nombre de usuario">
+                    <input type="text" value="CI" placeholder="CI">
+                    <input type="email" value="Email" placeholder="Email">
+                    <input type="tel" value="Teléfono" placeholder="Teléfono">
+                    <input type="date" value="Fecha de nacimiento" placeholder="Fecha de nacimiento">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

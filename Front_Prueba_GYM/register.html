@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="styleregister.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>N<br>
+                O<br>
+                V<br>
+                A<br>
+                F<br>
+                I<br>
+                T
+            </h1>
+        </div>
+        <div class="form-container">
+            <h2>REGISTRO</h2>
+            <p>Rellene los datos para su perfil</p>
+            <form action="#" method="post">
+                <input type="text" placeholder="NOMBRE" required>
+                <input type="text" placeholder="CI" required>
+                <input type="email" placeholder="EMAIL" required>
+                <input type="tel" placeholder="TELEFONO" required>
+                <label for="birthdate">FECHA DE NACIMIENTO</label>
+                <input type="date" id="birthdate" required>
+                
+                <div class="radio-group">
+                    <label>SEXO</label>
+                    <label><input type="radio" name="gender" value="masculino" required> MASCULINO</label>
+                    <label><input type="radio" name="gender" value="femenino" required> FEMENINO</label>
+                </div>
+                <button type="submit" class="btn">REGISTRAR</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

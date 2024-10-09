@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    background-color: black;
+}
+/*
+.container {
+    display: flex;
+    width: 100%;
+}*/
+
+.sidebar {
+    background-color: #ffd700;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar h1 {
+    font-size: 70px; /* Tamaño de fuente grande para el logo */
+    font-weight: bold; /* Negrita */
+    color: black; /* Color del texto */
+    margin: 0; /* Sin márgenes */
+    text-align: center;
+}
+
+/* Contenedor principal */
+.container {
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*flex: 1;*/
+   padding: 20px;
+    /*flex-wrap: wrap; / Para que las tarjetas se ajusten en pantallas pequeñas */
+}
+
+
+.form-container {
+    background-color: black; /* Fondo negro para el formulario */
+    width: 60%; /* Ancho del contenedor del formulario */
+    padding: 100px; /* Espaciado interno */
+    color: white; /* Color del texto */
+    display: flex; /* Flexbox para el contenido del formulario */
+    flex-direction: column; /* Orientación vertical */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    /*margin: 10px 500px 10px 10px;*/
+}
+
+/*
+.form-container {
+    width: 60%;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}*/
+
+
+h2 {
+    font-size: 36px; /* Tamaño de fuente del título */
+    line-height: 1.5;
+    margin: 0 0 10px 0; /* Espaciado inferior */
+}
+
+
+p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+p:first-of-type {
+    margin: 0 0 20px 0; /* Espacio inferior */
+    line-height: 1.5;
+}
+
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+}
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #ffd700;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #edb302;
+}
+
+a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Para pantallas medianas (tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 80%; /* Ajustar el ancho de las tarjetas en pantallas medianas */
+    }
+
+    .sidebar h1 {
+        font-size: 2.5em; /* Reducir el tamaño del texto en la barra lateral */
+    }
+}

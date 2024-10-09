@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 50px;
+    margin: 10;
+    height: 100vh; /* Asegura que el fondo cubra toda la altura de la ventana */
+    background: linear-gradient(to bottom, #ffdd00 14%, black 86%); 
+    /* El fondo es 14% amarillo y el resto negro */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo h1 {
+    color: #ffffff;
+    font-size: 60px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    background-color: #000;
+    color: #fff;
+    padding: 13px 30px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.btn:hover {
+    background-color: rgb(104, 96, 96); /* Color de fondo al pasar el cursor */
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+/* Media Queries para hacerlo responsivo */
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Hacer que la barra de navegación se apile en vertical */
+        align-items: center;
+    }
+
+    .logo h1 {
+        font-size: 35px; /* Reducir el tamaño del logo en pantallas pequeñas */
+    }
+
+    .menu {
+       /* flex-direction: column; /* Poner el menú en columna */
+        gap: 10px;
+    }
+
+    .btn {
+        width: 80%; /* Hacer los botones más anchos para pantallas pequeñas */
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .banner {
+        margin-top: 100px; /* Ajustar el margen superior */
+    }
+
+    .banner img {
+        height: auto;
+    }
+}
+
+/* Para pantallas medianas (tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .navbar {
+        padding: 15px 30px; /* Reducir el padding en pantallas medianas */
+    }
+
+    .logo h1 {
+        font-size: 32px; /* Ajustar el tamaño del logo */
+    }
+
+    .menu {
+        gap: 15px; /* Reducir el espacio entre los elementos del menú */
+    }
+
+    .btn {
+        padding: 12px 25px; /* Ajustar el tamaño de los botones */
+    }
+
+    .banner {
+        margin-top: 30px; /* Ajustar el margen superior */
+    }
+}
+
+/* Para pantallas grandes (escritorio) 
+@media (min-width: 1025px) {
+    .navbar {
+        padding: 20px 40px;
+    }
+
+    .logo h1 {
+        font-size: 35px;
+    }
+
+    .menu {
+        gap: 20px;
+    }
+
+    .btn {
+        padding: 13px 30px;
+    }
+}*/
